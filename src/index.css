@@ -1,0 +1,19 @@
+*{ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; 
+  font-family: 'Montserrat', sans-serif
+}
+:root {
+  --clr-light: #f5f5f5;
+  --clr-dark: #27292b;
+  --clr-main: #d5c0ab;
+  --clr-soft: #27292b7f;
+  --clr-grey: #5a5a5a;
+
+  --box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  --box-shadow-expand: 0 0 15px rgba(0, 0, 0, .3);
+}
+body{
+  background-color: var(--clr-light);
+}
