@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<ItemListContainer greeting="Bienvenido a tu mercado virtual de Orgánicos del Retiro" />} />
           <Route path="/categoryId" element={<ItemListContainer />} />
-          <Route path="/categoryId/:frutas" element={<ItemListContainer />} />
+          <Route path="/Frutas/:categoryId" element={<ItemListContainer />} />
           <Route path="/Verduras/:categoryId" element={<ItemListContainer />} />
           <Route path="/Hortalizas/:categoryId" element={<ItemListContainer />} />
           <Route path="/categoryId/:Otros" element={<ItemListContainer />} />

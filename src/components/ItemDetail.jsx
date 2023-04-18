@@ -24,11 +24,14 @@ function ItemDetail({ data }) {
           <div>
             <ItemCount initial={1} stock={8} onAdd={onAdd} />
             {goToCart && <Link to='/cart'>
-              <Button variant="warning"> Terminar compra </Button>
+              <Button className='btn-end' variant="warning"> Terminar compra </Button>
             </Link>}
+            <div>
             <Link to="/">
-              <Button variant="info"> Continuar comprando </Button>
+              <Button className='btn-continue' variant="info"> Continuar comprando </Button>
             </Link>
+
+            </div>
           </div>
         </div>
       </div>

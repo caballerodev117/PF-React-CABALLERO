@@ -45,7 +45,8 @@ function Navbarorganicos() {
             />
             <Button variant="outline-success">Buscar</Button>
           </Form>
-          <CartWidget />
+          <Nav.Link as={Link} to="Cart"><CartWidget />
+            </Nav.Link> 
         </Navbar.Collapse>
       </Container>
     </Navbar>
