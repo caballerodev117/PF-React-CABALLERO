@@ -26,7 +26,7 @@ function Navbarorganicos() {
             <Nav.Link as={Link} to="/Frutas/:categoryId">
               Frutas
             </Nav.Link>
-            <Nav.Link as={Link} to="/Verduras/">
+            <Nav.Link as={Link} to="/Verduras/:categoryId">
               Verduras
             </Nav.Link>
             <Nav.Link as={Link} to="/Hortalizas/:categoryId">

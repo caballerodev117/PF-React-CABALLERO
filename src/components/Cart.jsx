@@ -1,4 +1,4 @@
-import { useCartContext } from './CartContext'
+import { useCartContext } from '../context/CartContext';
 import {Link} from 'react-router-dom'
 import ItemCart from './ItemCart';
 import { getFirestore, collection, doc, addDoc, updateDoc } from 'firebase/firestore';

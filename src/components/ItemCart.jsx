@@ -1,5 +1,4 @@
-import { useCartContext } from './CartContext';
-
+import { useCartContext } from "../context/CartContext";
 function ItemCart({ product }) {
     const { removeProduct } = useCartContext();
     return (
