@@ -30,11 +30,6 @@ function CartProvider({ children }) {
         }
     }
 
-
-
-
-
-
     return (
         <CartContext.Provider value={{
             clearCart,
@@ -52,4 +47,4 @@ function CartProvider({ children }) {
     )
 }
 
-export default CartProvider
+export default CartProvider;

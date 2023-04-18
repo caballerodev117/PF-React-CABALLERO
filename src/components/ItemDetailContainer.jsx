@@ -18,7 +18,7 @@ function ItemDetailContainer() {
 
   return (
     <div className="container">
-      {item ? (
+      {data ? (
         <ItemDetail data={data} />
       ) : (
         <p>El item no existe</p>

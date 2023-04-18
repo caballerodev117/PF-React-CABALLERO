@@ -17,8 +17,8 @@ function Cart() {
   if (cart.length ===0){
     return(
       <>
-      <p>No productos en el carrito</p>
-      <Link to='/'>Hacer compra</Link>
+      <p>No  hay productos en tu carro de compras</p>
+      <Link to='/'>Realizar pedido</Link>
       </>
     );
   }
@@ -33,4 +33,4 @@ function Cart() {
   )
 }
 
-export default Cart
+export default Cart;

@@ -35,3 +35,9 @@ body{
 .cart-count {
   margin: 5px
 }
+.btn-custom {
+  background-color:  #562C0A;
+  transition: background-color 0.6s ease-in-out;
+  border-color: #562C0A;
+  color: var(--clr-light);
+}

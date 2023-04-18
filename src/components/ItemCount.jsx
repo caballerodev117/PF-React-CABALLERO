@@ -31,7 +31,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       <Button variant="secondary" disabled={count >= stock} onClick={handleAdd}>
         <FontAwesomeIcon icon={faPlus} />
       </Button>
-      <Button variant="primary" disabled={stock <= 0} onClick={handleAddToCart} className="ms-3">
+      <Button variant="success" disabled={stock <= 0} onClick={handleAddToCart} className=" btn-custom ms-3">
         Agregar al carrito
       </Button>
     </div>

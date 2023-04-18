@@ -23,16 +23,16 @@ function Navbarorganicos() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/categoria/frutas">
+            <Nav.Link as={Link} to="/Frutas/:categoryId">
               Frutas
             </Nav.Link>
-            <Nav.Link as={Link} to="/categoria/verduras">
+            <Nav.Link as={Link} to="/Verduras/">
               Verduras
             </Nav.Link>
-            <Nav.Link as={Link} to="/categoria/hortalizas">
+            <Nav.Link as={Link} to="/Hortalizas/:categoryId">
               Hortalizas
             </Nav.Link>
-            <Nav.Link as={Link} to="/categoria/otros">
+            <Nav.Link as={Link} to="/Otros/:categoryId">
               Otros
             </Nav.Link>
           </Nav>
