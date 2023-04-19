@@ -17,10 +17,10 @@ function ItemDetail({ data }) {
   return (
     <div className='container'>
       <div className='detail'>
-        <img className='detail_image' src={data.img} alt={data.description} />
+        <img className='img-adjust' src={data.img}  style={{ maxWidth: '70vh' }} alt={data.description} />
         <div className='content'>
-          <h1>{data.title}</h1>
-          <p>{data.price} </p>
+          <h1>{data.description}</h1>
+          <p> ${data.price} </p>
           <div>
             <ItemCount initial={1} stock={8} onAdd={onAdd} />
             {goToCart && <Link to='/cart'>

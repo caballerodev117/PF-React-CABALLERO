@@ -23,7 +23,7 @@ function ItemListContainer({ greeting }) {
   return (
     <div className="container">
       <div className="jumbotron">
-        <h1 className="display-4">{greeting}</h1>
+        <h1 className="display-5">{greeting}</h1>
         <hr className="my-4" />
         <p className="lead">Aquí podrás encontrar la mejor variedad de productos orgánicos.</p>
       </div>
