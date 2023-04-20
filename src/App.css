@@ -70,3 +70,8 @@ body{
 .text-white {
   color: whitesmoke;
 }
+.link-nostyle {
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+}
