@@ -17,7 +17,7 @@ function ItemDetail({ data }) {
   return (
     <div className='container'>
       <div className='detail'>
-        <img className='img-adjust' src={data.img}  style={{ maxWidth: '70vh' }} alt={data.description} />
+        <img className='img-adjust' src={data.img} style={{ maxWidth: '70vh' }} alt={data.description} />
         <div className='content'>
           <h1>{data.description}</h1>
           <p> ${data.price} </p>
@@ -27,10 +27,9 @@ function ItemDetail({ data }) {
               <Button className='btn-end' variant="warning"> Terminar compra </Button>
             </Link>}
             <div>
-            <Link to="/">
-              <Button className='btn-continue' variant="info"> Continuar comprando </Button>
-            </Link>
-
+              <Link to="/">
+                <Button className='btn-continue' variant="info"> Continuar comprando </Button>
+              </Link>
             </div>
           </div>
         </div>

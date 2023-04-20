@@ -18,12 +18,9 @@ function ItemDetailContainer() {
 
   return (
     <div className="container">
-      {data ? (
-        <ItemDetail data={data} />
-      ) : (
-        <p>El item no existe</p>
-      )}
+      <ItemDetail data={data} />
     </div>
+
   );
 };
 

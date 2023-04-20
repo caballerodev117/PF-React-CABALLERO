@@ -2,7 +2,8 @@ import { useCartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom'
 import ItemCart from './ItemCart';
 import { Button } from 'react-bootstrap';
-import { getFirestore, collection, doc, addDoc, updateDoc } from 'firebase/firestore';
+
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
 function Cart() {
   const { cart, totalPrice } = useCartContext();
@@ -17,10 +18,20 @@ function Cart() {
 
   if (cart.length === 0) {
     return (
-      <>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '20vh'
+        }}>
         <p>No hay productos en tu carro de compras</p>
-        <Button variant= "warning"> <Link to='/' style={{ textDecoration: 'none' }}>volver a la tienda</Link> </Button>
-      </>
+        <Button variant="warning">
+          <Link to='/' style={{ textDecoration: 'none' }}>
+            volver a la tienda</Link>
+        </Button>
+      </div>
     );
   }
 
@@ -28,7 +39,10 @@ function Cart() {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
       {cart.map(product => <ItemCart key={product.id} product={product} />)}
       <p className='total-price'>total: $ {totalPrice()} </p>
-      <Button className='btn-order' variant="success" onClick={handleClick}>Generar orden de compra</Button>
+      <Link to="/checkout">
+        <Button className='btn-order' variant="success">Generar orden de compra</Button>
+      </Link>
+
     </div>
   )
 }

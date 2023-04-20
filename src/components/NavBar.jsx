@@ -1,12 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import LogoOrganicos from '../logos/LogoOrganicos.jpg';
 import CartWidget from './CartWidget';
+
 
 function Navbarorganicos() {
   return (
@@ -36,15 +35,6 @@ function Navbarorganicos() {
               Otros
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Buscar producto"
-              className="me-2"
-              aria-label="Buscar"
-            />
-            <Button variant="outline-success">Buscar</Button>
-          </Form>
           <Nav.Link as={Link} to="Cart"><CartWidget />
             </Nav.Link> 
         </Navbar.Collapse>
