@@ -9,7 +9,7 @@ function CartWidget() {
     <div className="cart-icon">
       <button className="btn">
         <FontAwesomeIcon icon={faShoppingCart} />
-        <span className="cart-count">{totalProducts() || ''}</span>
+        <span className="cart-count" style={{ color: 'red', fontWeight: 'bold' }}>{totalProducts() || ''}</span>
       </button>
     </div>
   );

@@ -7,11 +7,13 @@ import { Button } from 'react-bootstrap';
 function ItemDetail({ data }) {
 
   const [goToCart, setGoToCart] = useState(false);
+  const [addedToCart, setAddedToCart] = useState(false);
   const { addProduct } = useCartContext();
 
   const onAdd = (quantity) => {
     setGoToCart(true);
     addProduct(data, quantity);
+    setAddedToCart(true);
   }
 
   return (
@@ -26,11 +28,11 @@ function ItemDetail({ data }) {
             {goToCart && <Link to='/cart'>
               <Button className='btn-end' variant="warning"> Terminar compra </Button>
             </Link>}
-            <div>
-              <Link to="/">
+            {addedToCart ? (
+              <Link to='/'>
                 <Button className='btn-continue' variant="info"> Continuar comprando </Button>
               </Link>
-            </div>
+            ) : null}
           </div>
         </div>
       </div>

@@ -43,7 +43,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
       </div>
       <Row className="mt-3">
         <Col>
-          <Toast onClose={() => setShowToast(false)} show={showToast} delay={3200} autohide>
+          <Toast onClose={() => setShowToast(false)} show={showToast} delay={3100} autohide>
             <Toast.Header className="bg-success text-white">
               <strong className="me-auto">Producto agregado al carrito</strong>
             </Toast.Header>

@@ -60,13 +60,22 @@ function Checkout() {
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
             {orderId ? (
                 <>
-                    <h2>Gracias por tu compra!</h2>
+                    <h2>¡Gracias por tu compra!</h2>
+                    <h3>Tu orden llegará dentro de las próximas 2 horas</h3>
                     <p>Tu número de orden es: {orderId}</p>
+                    <p>Estos son los datos del envío:</p>
+                    <ul>
+                        <li>Nombre: {form.name} {form.lastName}</li>
+                        <li>Teléfono: {form.phone}</li>
+                        <li>Correo electrónico: {form.email}</li>
+                        <li>Dirección: {form.address}</li>
+                    </ul>
                     <Button variant="warning">
                         <Link to="/" style={{ textDecoration: 'none' }}>
                             Volver a la tienda
                         </Link>
                     </Button>
+                    <hr />
                 </>
             ) : (
                 <Form onSubmit={handleSubmit} style={{ width: '50%' }}>
