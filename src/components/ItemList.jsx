@@ -10,4 +10,3 @@ function ItemList({ data = [] }) {
 }
 
 export default ItemList;
-

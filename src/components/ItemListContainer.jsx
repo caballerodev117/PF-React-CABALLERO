@@ -33,4 +33,3 @@ function ItemListContainer({ greeting }) {
 }
 
 export default ItemListContainer;
-

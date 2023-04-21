@@ -36,7 +36,7 @@ function Navbarorganicos() {
             </Nav.Link>
           </Nav>
           <Nav.Link as={Link} to="Cart"><CartWidget />
-            </Nav.Link> 
+          </Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

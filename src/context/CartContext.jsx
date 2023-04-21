@@ -19,7 +19,6 @@ function CartProvider({ children }) {
 
     const removeProduct = (id) => setCart(cart.filter(product => product.id !== id));
 
-
     const addProduct = (item, quantity) => {
         if (isInCart(item.id)) {
             setCart(cart.map(product => {

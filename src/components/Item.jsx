@@ -7,19 +7,19 @@ import { faMagnifyingGlassPlus } from "@fortawesome/free-solid-svg-icons";
 function Item({ info }) {
 
   return (
-    <Col> 
+    <Col>
       <Card style={{ width: '20rem', padding: 5 }}>
         <Card.Title>{info.title}</Card.Title>
         <Link to={`/detalle/${info.id}`} className='producto'>
-          <Card.Img 
-            variant="top" 
-            src={info.img} 
-            alt={info.title} 
-            style={{ 
-              height: '15rem', 
-              objectFit: 'contain', 
-              objectPosition: 'center 20%' 
-            }} 
+          <Card.Img
+            variant="top"
+            src={info.img}
+            alt={info.title}
+            style={{
+              height: '15rem',
+              objectFit: 'contain',
+              objectPosition: 'center 20%'
+            }}
           />
         </Link>
         <Card.Body>
@@ -30,7 +30,7 @@ function Item({ info }) {
             <Link to={`/detalle/${info.id}`}>
               <FontAwesomeIcon icon={faMagnifyingGlassPlus} beat />
               ${info.price}
-            </Link> 
+            </Link>
           </Card.Text>
         </Card.Body>
       </Card>
