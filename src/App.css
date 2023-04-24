@@ -23,18 +23,8 @@ body {
 }
 
 .cart-icon {
-  margin-left: 1rem;
-  color: #f7d7b7;
-  border-radius: 12%;
   padding: 6px;
-  font-size: 17px;
-}
-
-.cart-icon:hover {
-  color: #f7d7b7;
-  background-color: #562C0A;
-  border-radius: 12%;
-  transition-duration: 0.8s;
+  font-size: 7px;
 }
 
 .cart-count {
