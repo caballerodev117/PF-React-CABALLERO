@@ -5,11 +5,11 @@
     I. Funcionalidad General: 
 
         •	Listado de productos por categorías.
-        •	Detalle de cada producto con información detallada y botón para     agregar al carrito.
-        •	Carrito de compras con listado de productos, total de la compra y botones para editar y eliminar productos.
+        •	Detalle de cada producto con información detallada y botón para agregar al carrito.
+        •	Carrito de compras con listado de productos, total de la compra y botón para eliminar productos.
         •	Checkout con formulario de contacto y validación de campos.
         •	Manejo de estado con React Hooks y Context API.
-        •	Uso de Firebase para el almacenamiento de datos y autenticación de usuarios.
+        •	Uso de Firebase para el almacenamiento de datos y  manejo de órdenes.
 
     II. Funcionalidad Específica: 
 
@@ -23,17 +23,17 @@
     La página de detalle del producto muestra información detallada del mismo, así como la opción de agregarlo al carrito de compras.
 
     Carrito de compras
-    El carrito de compras muestra un listado de los productos agregados, permitiendo eliminar o modificar la cantidad de unidades. Desde aquí se puede acceder al checkout para finalizar la compra.
+    El carrito de compras muestra un listado de los productos agregados, permitiendo eliminar la cantidad de unidades, desde aquí se puede acceder al checkout para finalizar la compra.
 
     Checkout
-    El checkout permite ingresar los datos del comprador, seleccionar la forma de pago y realizar la compra.
+    El checkout permite ingresar los datos del comprador, crear la orden en el Firestore generar la orden de compra y realizar la compra.
 
 
     III. Librerías utilizadas
 
     •	React Bootstrap: se utilizó para la maquetación y diseño de los componentes visuales.
     •	React Router: se utilizó para manejar las distintas rutas y páginas del sitio.
-    •	Firebase: se utilizó para almacenar y manipular la información de los productos.
+    •	Firebase: se utilizó para almacenar,manipular la información de los productos y generar las órdenes de compra.
     •	Vite: se utilizó para inicializar el proyecto de ReactJS, brindando ventajas en la velocidad de compilación y desarrollo.
 
     III-A Ventajas de Vite
